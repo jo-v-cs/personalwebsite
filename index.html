@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kenji</title>
-</head>
-<body>
-    <main>
-        <header>
-            <h1>Kenji Black</h1>
-        </header>
-        <section id="aboutkenji">
-            <h2>Who is Kenji?</h2>
-            <p>Kenji is a dog.</p>
-            <h2>How old is Kenji?</h2>
-            <p>Kenji is almost eight years old</p>
-        </section>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kenji</title>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>Kenji Black</h1>
+            </header>
+            <section id="aboutkenji">
+                <h2>Who is Kenji?</h2>
+                <p>Kenji is a dog.</p>
+                <h2>How old is Kenji?</h2>
+                <p>Guess how old Kenji is:
+                    <!-- default form action is current page -->
+                    <!-- default form method is GET -->
+                    <form enctype="application/x-www-form-urlencoded" id="q">
+                        <input id = "s">
+                        <input type="submit">
+                    </form>
+                </p>
+            </section>
 
-        <section id="kenjistory">
-            <h2>Kenji's Story</h2>
-            <p>Kenji grew up on a farm near Houston, TX. One day, he was found at a shelter.
-            </p>
-        </section>
-    </main>
-</body>
+            <section id="kenjistory">
+                <h2>Kenji's Story</h2>
+                <p>Kenji grew up on a farm near Houston, TX. One day, he was found at a shelter.
+                </p>
+            </section>
+        </main>
+    </body>
+    <script>
+        let formInput = document.forms["#q"];
+        document.getElementById("q").addEventListener('submit', function(e) {
+            alert("Hey, nice guess.");
+            alert(formInput);
+        });
+    </script>
 </html>
