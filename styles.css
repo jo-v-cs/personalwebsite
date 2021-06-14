@@ -1,0 +1,75 @@
+* {
+    border: solid red 1px;
+}
+
+nav>ul>li {
+    list-style: none;
+    display: block;
+    text-align: center;
+    padding: .5em 0 .5em 0;
+}
+fieldset {
+    border-color: #a593c2;
+    border-width: 3px;
+    border-style: solid;
+}
+
+fieldset>legend{
+    color: #a593c2;
+}
+
+p>label {
+    display: block;
+}
+
+input, 
+textarea {
+    border-radius: 7px;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input:invalid {
+    border-color: red;;
+}
+
+input:focus:invalid {
+    border-color: black;
+}
+
+input:required {
+    border-style: dotted;
+}
+
+/* side menu */
+
+main {
+    display: flex;
+    width: 60%;
+}
+
+#sidemenu {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 25%;
+}
+
+/* Top bar */
+
+.topbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 120px;
+}
+
+.topbar > .logo {
+    display: flex;
+}
+
+.topbar > .nav {
+    display: flex;
+}
