@@ -1,60 +1,21 @@
 * {
-    border: solid red 1px;
+    /* border: solid red 1px; */
+} 
+
+body {
+    background-color: rgb(255, 240, 240);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-nav>ul>li {
-    list-style: none;
-    display: block;
-    text-align: center;
-    padding: .5em 0 .5em 0;
-}
-fieldset {
-    border-color: #a593c2;
-    border-width: 3px;
-    border-style: solid;
-}
+/* main content */
 
-fieldset>legend{
-    color: #a593c2;
-}
-
-p>label {
-    display: block;
-}
-
-input, 
-textarea {
-    border-radius: 7px;
-}
-
-input:valid {
-    border-color: green;
-}
-
-input:invalid {
-    border-color: red;;
-}
-
-input:focus:invalid {
-    border-color: black;
-}
-
-input:required {
-    border-style: dotted;
-}
-
-/* side menu */
-
-main {
-    display: flex;
-    width: 60%;
-}
-
-#sidemenu {
+.main-content {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 25%;
+}
+
+.main-content > h1 {
+    text-align: center;
 }
 
 /* Top bar */
@@ -62,14 +23,33 @@ main {
 .topbar {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 120px;
+    border: solid black 1px;
+    background-color: rgb(248, 214, 214);
 }
 
 .topbar > .logo {
     display: flex;
+    overflow: hidden;
+    margin: 35px 0 25px 25px;
+    font-size: 1.5em;
+    text-decoration: none;
+    height: 50px;
+    width: 50px;
+    border: solid black 1px;
+    border-radius: 50%;
+}
+
+.topbar > .logo img {
+    margin-left: -16px;
 }
 
 .topbar > .nav {
     display: flex;
+    margin: 40px 25px 25px 0;
+}
+
+.nav-menu {
+    display: none;
 }
