@@ -3,8 +3,12 @@
 } 
 
 body {
-    background-color: rgb(255, 240, 240);
+    background-color: rgb(255, 250, 240);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+section {
+    padding: 25px;
 }
 
 /* main content */
@@ -20,13 +24,19 @@ body {
 
 /* Top bar */
 
+.top {
+    padding: 0;
+}
+
 .topbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 120px;
-    border: solid black 1px;
+    border-bottom: solid rgb(235, 170, 170) 2px;
     background-color: rgb(248, 214, 214);
+    padding: 0;
+    margin: 0;
 }
 
 .topbar > .logo {
@@ -37,7 +47,7 @@ body {
     text-decoration: none;
     height: 50px;
     width: 50px;
-    border: solid black 1px;
+    border: solid whitesmoke 2px;
     border-radius: 50%;
 }
 
@@ -45,11 +55,24 @@ body {
     margin-left: -16px;
 }
 
-.topbar > .nav {
+.topbar > .nav-menu > .nav {
     display: flex;
     margin: 40px 25px 25px 0;
 }
 
-.nav-menu {
-    display: none;
+/* Hamburger icon styling */
+.topbar > .nav-menu > .nav:hover {
+    background-color: #ddd;
+}
+
+/* nav menu links */
+#nav-links {
+    display:none;
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 800px){
+    section {
+        padding: 50px;
+    }
 }
