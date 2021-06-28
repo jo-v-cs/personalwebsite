@@ -71,7 +71,8 @@ section {
 /* nav menu links */
 
 .nav-menu {
-    display: none;
+    display: block;
+    position: absolute;
     width: 100%;
 }
 
