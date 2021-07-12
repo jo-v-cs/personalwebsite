@@ -93,6 +93,10 @@ section {
     text-decoration: none;
 }
 
+#nav-menu-large {
+    display: none;
+}
+
 /* Media query for medium screens */
 @media screen and (min-width: 800px){
     section {
@@ -104,5 +108,36 @@ section {
 @media screen and (min-width: 1020px) {
     section {
         padding: 100px;
+    }
+
+    /* Restructure nav links */
+    .nav {
+        display: none;
+    }
+
+    #nav-menu-large {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #nav-menu-large li {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        margin: 0 8em;
+    }
+
+    #nav-menu-large li a:link {
+        text-decoration: none;
+        color: black;
+    }
+
+    #nav-menu-large li a:hover {
+        color: yellowgreen;
+    }
+
+    /* Adjust alignment of flex top bar */
+    .topbar {
+        justify-content: normal;
     }
 }
