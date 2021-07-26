@@ -136,8 +136,9 @@ section {
         color: yellowgreen;
     }
 
+    /* Hide hamburger menu if open */
     #nav-links {
-        display: none;
+        display: none !important;
     }
 
     /* Adjust alignment of flex top bar */
