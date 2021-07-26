@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/e4e0ba5b6f.js" crossorigin="anonymous"></script>
-    <title>Template</title>
+    <title>| Contact Me</title>
 </head>
 <body>
     <!-- Top bar -->
@@ -36,13 +36,19 @@
     <!-- Begin main content -->
     <section>
         <main class="main-content">
-            <h1> Template </h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat velit finibus, auctor lorem sit amet, commodo enim. Ut at condimentum orci. Proin convallis tincidunt nisl nec gravida. Duis nec faucibus nulla, quis faucibus neque. Nullam eu eros varius, vehicula sem in, aliquet sapien. Nulla vel elementum dui. Pellentesque euismod urna neque, sed bibendum elit pharetra id. Nunc malesuada pellentesque est sed gravida. Donec sapien sem, rutrum in gravida at, gravida posuere tortor. Sed in aliquam erat, vitae efficitur sapien. Nunc interdum dolor lorem, eget placerat quam dignissim a. Pellentesque rhoncus consequat rutrum. Nunc suscipit ut augue ut accumsan. Praesent laoreet eu enim sed ultricies. Pellentesque consectetur vulputate lacinia. Nunc elementum congue aliquam.</p>
+            <h1>Contact Me</h1>
+            <form action="contact.html" method="POST" enctype="application/x-www-form-urlencoded">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="visitorName">Your name: </label><input required minlength="10" maxlength="75" type="text" id="visitorName" name="visitorName"> <br>
+                    <label for="visitorEmail">Your email: </label><input type="email" id="visitorEmail" name="visitorEmail"> <br>
+                    <label for="visitorPhone">Your phone: </label><input type="tel" id="visitorPhone" name="visitorPhone"> <br>    
+                    <input type="hidden" name="source" value="ContactForm">
+                </fieldset>
         </main>
     </section>
     <section>
         <footer>
-
         </footer>
     </section>
 </body>
