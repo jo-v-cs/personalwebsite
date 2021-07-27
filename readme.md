@@ -10,4 +10,5 @@ This is a personal website I am building to display my future projects. It inclu
 **CSS Features**: 
   - Hamburger-style navigation menu that opens/closes when the hamburger icon is selected.
   - CSS Flexbox is used to align and display items in the top bar as well as the main content of each page.
-**JavaScript Feature**: Hamburger-style navigation menu is implemented with JavaScript. 
+**JavaScript Feature**: 
+  - Hamburger-style navigation menu is implemented with JavaScript. 
