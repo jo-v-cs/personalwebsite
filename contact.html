@@ -4,52 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kenji</title>
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/e4e0ba5b6f.js" crossorigin="anonymous"></script>
+    <title>| Contact Me</title>
 </head>
 <body>
-    <main id="main">
-        <h1>Contact Us</h1>
-        <form action="contact.html" method="POST" enctype="application/x-www-form-urlencoded">
-            <fieldset>
-                <legend>Contact Information</legend>
-                <label for="visitorName">*Your name: </label><input required minlength="10" maxlength="75" type="text" id="visitorName" name="visitorName"> <br>
-                <label for="visitorEmail">Your email: </label><input type="email" id="visitorEmail" name="visitorEmail"> <br>
-                <label for="visitorPhone">Your phone: </label><input type="tel" id="visitorPhone" name="visitorPhone"> <br>
-                <label><input type="radio" name="phoneType" value="cell"> cell</label>
-                <label><input type="radio" name="phoneType" value="work"> work</label>
-                <label><input type="radio" name="phoneType" value="home"> home</label>
-                <br>
-
-                Ok to contact me: 
-                <input type="checkbox" name="okToContact" value="phone"> by phone
-                <input type="checkbox" name="okToContact" value="email"> by email
-                <br>
-
-                <input type="hidden" name="source" value="ContactForm">
-            </fieldset>
-
-            <fieldset>
-                <legend>Feedback</legend>
-                <textarea tabindex="1" name="feedbackText" id="" cols="30" rows="3"></textarea><br>
-
-                Feedback type: <select name="feedbackType" multiple="multiple" size="6">
-                    <optgroup label="Stores">
-                        <option value="webStore">Web store</option>
-                        <option value="physicalStore">Physical store</option>
-                    </optgroup>
-                    <option value="webtech">Website Issue</option>
-                    <option value="general">General feedback</option>
-                </select>
-                <br>
-
-                Severity: <input tabindex="2" type="range" min="1" max="10" name="severityRange"><br>
-                Severity: <input tabindex="3" type="number" min="1" max="10" name="severity"><br>
-                Issue time: <input tabindex="4" type="time" name="issueTime"><br>
-                Issue date: <input tabindex="5" type="date" name="issueDate"> <br>
-            </fieldset>
-                <input type="submit" value="Send Contact">
-        </form>
-    </main>
+    <!-- Top bar -->
+    <section class="top">
+        <header class="topbar">
+            <a href="#" class=logo><img src="puppy.jpg" alt="logo"></a>
+            <!-- 'Bars'icon from fontawesome.com -->
+            <button class="nav"><i class="fas fa-bars"></i></button>
+            <!-- Larger screen nav links -->
+            <ul id="nav-menu-large">
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./more.html">More Stuff</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>          
+        </header>
+        <!-- Nav links (hidden by default) -->
+        <div class="nav-menu">
+            <ul id="nav-links">
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./more.html">More Stuff</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>            
+        </div>
+    </section>
+    <!-- Begin main content -->
+    <section>
+        <main class="main-content">
+            <h1>Contact Me</h1>
+            <form action="contact.html" method="POST" enctype="application/x-www-form-urlencoded">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="visitorName">Your name: </label><input required maxlength="75" type="text" id="visitorName" name="visitorName"> <br>
+                    <label for="visitorEmail">Your email: </label><input type="email" id="visitorEmail" name="visitorEmail"> <br>
+                    <label for="visitorPhone">Your phone: </label><input type="tel" id="visitorPhone" name="visitorPhone"> <br>    
+                    <input type="hidden" name="source" value="ContactForm">
+                </fieldset>
+        </main>
+    </section>
+    <section>
+        <footer>
+        </footer>
+    </section>
 </body>
+
+<script src="site.js"></script>
 </html>
