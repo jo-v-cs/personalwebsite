@@ -139,6 +139,10 @@ legend {
         padding: 100px;
     }
 
+    .top {
+        display: flex;
+    }
+
     /* Restructure nav links */
     .nav {
         display: none;
@@ -172,6 +176,6 @@ legend {
 
     /* Adjust alignment of flex top bar */
     .topbar {
-        justify-content: normal;
+        justify-content: space-between;
     }
 }
