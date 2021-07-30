@@ -7,6 +7,12 @@ This is a personal website I am building to display my future projects. It inclu
 
 ### Code Louisville Project Implemented Features:
 
+**Media Queries**:
+The two media queries can be best viewed on the "portfolio.html" page (accessible from "index.html" via the navigation bar).
+
+  - Medium screen (>= 800px width): Switch from single column to double column layout on portfolio display
+  - Large screen (>= 1020px width): Switch from the hamburger-style navigation bar to a fixed list
+
 **CSS Features**: 
   - Hamburger-style navigation menu that opens/closes when the hamburger icon is selected.
   - CSS Flexbox is used to align and display items in the top bar as well as the main content of each page.
