@@ -20,3 +20,4 @@ The two media queries can be best viewed on the "portfolio.html" page (accessibl
 
 **JavaScript Feature**: 
   - Hamburger-style navigation menu is implemented with JavaScript. 
+  - "contact.html" - contact form name is captured and a message is printed in the html body of the page thanking the user by name for submitting their contact information and message.
