@@ -2,6 +2,11 @@
     /* border: solid red; */
 } 
 
+h1,
+h2 {
+    text-align: center;
+}
+
 body {
     background-color: rgb(235, 248, 252);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
@@ -16,11 +21,9 @@ section {
 .main-content {
     display: flex;
     flex-direction: column;
+    align-self: center;
 }
 
-.main-content > h1 {
-    text-align: center;
-}
 
 /* Top bar */
 
@@ -100,14 +103,22 @@ section {
     display: none;
 }
 
+/* Landing page styling */
+.landing-image {
+    width: 80%;
+    align-self: center;
+}
 /* Portfolio page styling */
-.portfolio-header {
+.portfolio-item {
+    align-self: center;
+    justify-content: center;
+}
+
+.portfolio-item > h2 {
     text-align: center;
 }
-.portfolio-item {
-
-    border: solid 2px rgb(235, 170, 170);
-    margin: auto;
+.portfolio-item > img {
+    float: center;
 }
 
 /* Contact form styling */
@@ -126,21 +137,29 @@ legend {
     font-weight: bold;
     font-size: 1.25em;
 }
+
+/* Column and row flex layout */
+
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* Media query for medium screens */
 @media screen and (min-width: 800px){
     section {
-        padding: 50px;
+        padding: 25px;
     }
-    .row-medium {
+    
+    .row {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
     }
-    .column-medium {
-        display: flex;
-        flex-direction: column;
+    .col {
+        flex: 50%;
     }
+
 }
 
 /* Media query for large screens */
@@ -149,11 +168,14 @@ legend {
         padding: 100px;
     }
 
+    /* Landing page style medium */
+    .landing-image {
+        width: 900px;
+        height: 1200px;
+    }
+
     .top {
         display: flex;
-    }
-    .topbar {
-        ;
     }
 
     /* Restructure nav links */
