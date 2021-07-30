@@ -131,6 +131,16 @@ legend {
     section {
         padding: 50px;
     }
+    .row-medium {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .column-medium {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /* Media query for large screens */
@@ -141,6 +151,9 @@ legend {
 
     .top {
         display: flex;
+    }
+    .topbar {
+        ;
     }
 
     /* Restructure nav links */
@@ -177,5 +190,11 @@ legend {
     /* Adjust alignment of flex top bar */
     .topbar {
         justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1365px) {
+    .topbar {
+        width: 100%;
     }
 }
