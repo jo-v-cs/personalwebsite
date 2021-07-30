@@ -44,13 +44,15 @@
                     <legend>Contact Information</legend>
                     <label for="visitorName">*Name: </label><input required maxlength="75" type="text" id="visitorName" name="visitorName"> <br>
                     <label for="visitorEmail">*Email: </label><input required type="email" id="visitorEmail" name="visitorEmail"> <br>
-                    <label for="visitorPhone">Phone: </label><input type="tel" id="visitorPhone" name="visitorPhone"> <br>    
-                    <input type="submit" id="formBtn">
+                    <label for="visitorPhone">Phone: </label><input type="tel" id="visitorPhone" name="visitorPhone"> <br>
+                    <label for="visitorMessage">Message: </label><textarea required type="text" id="visitorMessage" name="visitorMessage" rows="5" cols="30" maxlength="250"></textarea> <br>    
+                    <input type="submit">
                 </fieldset>
             </form>
             <p>*Indicates a required field.</p>
+            <!-- Response to user below on form submit -->
             <div id="userInput">
-                
+
             </div>
         </main>
     </section>
