@@ -100,6 +100,17 @@ section {
     display: none;
 }
 
+/* Portfolio page styling */
+.portfolio-header {
+    text-align: center;
+}
+.portfolio-item {
+    width: 400px;
+    height: 600px;
+    border: solid 1px red;
+    margin: auto;
+}
+
 /* Contact form styling */
 
 fieldset {

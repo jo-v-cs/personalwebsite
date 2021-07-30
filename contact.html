@@ -39,14 +39,15 @@
     <section>
         <main class="main-content">
             <h1>Contact Me</h1>
-            <form action="contact.html" method="POST" enctype="application/x-www-form-urlencoded">
+            <form id="contact-form" action="contact.html" method="POST" enctype="application/x-www-form-urlencoded">
                 <fieldset>
                     <legend>Contact Information</legend>
                     <label for="visitorName">Name: </label><input required maxlength="75" type="text" id="visitorName" name="visitorName"> <br>
                     <label for="visitorEmail">Email: </label><input type="email" id="visitorEmail" name="visitorEmail"> <br>
                     <label for="visitorPhone">Phone: </label><input type="tel" id="visitorPhone" name="visitorPhone"> <br>    
-                    <input type="hidden" name="source" value="ContactForm">
+                    <input type="submit">
                 </fieldset>
+            </form>
         </main>
     </section>
     <section>
@@ -56,4 +57,5 @@
 </body>
 
 <script src="site.js"></script>
+<script src="contactValidation.js"></script>
 </html>
