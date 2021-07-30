@@ -211,7 +211,7 @@ legend {
 
     /* Adjust alignment of flex top bar */
     .topbar {
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 }
 
